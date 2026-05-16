@@ -1306,7 +1306,7 @@
                     <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
                     View Projects
                 </a>
-                <a href="#" class="btn btn-outline" id="downloadCV">
+                <a href="https://raw.githubusercontent.com/haycee-sama/YOUR-REPO/main/public/files/collins-agu-cv.pdf" class="btn btn-outline" id="downloadCV" download target="_blank">
                     <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                     Download CV
                 </a>
@@ -1398,7 +1398,7 @@
         <h2 class="section-title reveal">Experience &amp; Growth</h2>
         <div class="timeline reveal reveal-delay-1">
             <div class="timeline-item"><span class="timeline-year">2016</span><h4>First Lines of Code</h4><p>Began learning programming in secondary school — discovered the magic of building with code.</p></div>
-            <div class="timeline-item"><span class="timeline-year">2018 – 2023</span><h4>Mechanical Engineering — ESUT</h4><p>Developed a rigorous engineering mindset, learning systems thinking and design principles.</p></div>
+            <div class="timeline-item"><span class="timeline-year">2019 – 2024</span><h4>Mechanical Engineering — ESUT</h4><p>Developed a rigorous engineering mindset, learning systems thinking and design principles.</p></div>
             <div class="timeline-item"><span class="timeline-year">2020 – 2022</span><h4>Internships &amp; Hands-on Work</h4><p>Applied engineering knowledge in real-world settings while growing as a developer.</p></div>
             <div class="timeline-item"><span class="timeline-year">2022 – 2024</span><h4>Frontend Development Growth</h4><p>Deepened expertise in HTML, CSS, JavaScript, and modern frontend practices.</p></div>
             <div class="timeline-item"><span class="timeline-year">2024 – Present</span><h4>Building Premium Products</h4><p>Creating scalable, award-worthy frontend experiences merging engineering with design.</p></div>
@@ -1428,21 +1428,21 @@
                 </button>
             </form>
             <div class="contact-links reveal reveal-delay-2">
-                <a href="mailto:agucollinschidera@email.com" class="contact-link">
+                <a href="mailto:kamidera@outlook.com" class="contact-link">
                     <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                     agucollinschidera@email.com
                 </a>
-                <a href="https://github.com/agucollins" target="_blank" rel="noopener" class="contact-link">
+                <a href="https://github.com/haycee-sama"" target="_blank" rel="noopener" class="contact-link">
                     <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
                     github.com/agucollins
                 </a>
-                <a href="https://linkedin.com/in/agucollins" target="_blank" rel="noopener" class="contact-link">
+                <a href="https://www.linkedin.com/in/collins-agu-a933b41b7/" target="_blank" rel="noopener" class="contact-link">
                     <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
                     LinkedIn Profile
                 </a>
                 <span class="contact-link">
                     <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                    Enugu, Nigeria
+                    Lagos, Nigeria
                 </span>
             </div>
         </div>
@@ -1491,300 +1491,459 @@
         </div>
     </div>
 
-    <script>
-        (function() {
-            // ─────────────────── DOM ───────────────────
-            const loader = document.getElementById('loader');
-            const progressBar = document.getElementById('progressBar');
-            const topNav = document.getElementById('topNav');
-            const bottomNav = document.getElementById('bottomNav');
-            const themeToggle = document.getElementById('themeToggle');
-            const typedTextEl = document.getElementById('typedText');
-            const projectsScroll = document.getElementById('projectsScroll');
-            const projectModal = document.getElementById('projectModal');
-            const modalClose = document.getElementById('modalClose');
-            const contactForm = document.getElementById('contactForm');
-            const techScroll = document.getElementById('techScroll');
-            const downloadCVBtn = document.getElementById('downloadCV');
-            const revealEls = document.querySelectorAll('.reveal');
-            const html = document.documentElement;
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
-            // ─────────────────── LOADING ───────────────────
-            const finishLoad = () => {
-                loader.classList.add('hidden');
-                observeStats();
-            };
-            window.addEventListener('load', () => setTimeout(finishLoad, 600));
-            if (document.readyState === 'complete') setTimeout(finishLoad, 300);
+<script>
+(function() {
 
-            // ─────────────────── SCROLL PROGRESS ───────────────────
-            window.addEventListener('scroll', () => {
-                const st = window.scrollY;
-                const dh = document.documentElement.scrollHeight - window.innerHeight;
-                progressBar.style.width = dh > 0 ? Math.min((st / dh) * 100, 100) + '%' : '0%';
-                if (st > 40) topNav.classList.add('scrolled');
-                else topNav.classList.remove('scrolled');
-                updateActiveNav();
-            }, { passive: true });
+    // ─────────────────── EMAIL JS INIT ───────────────────
+    emailjs.init("YOUR_PUBLIC_KEY");
 
-            // ─────────────────── ACTIVE NAV ───────────────────
-            const sections = document.querySelectorAll('section[id]');
-            const allBottomItems = bottomNav.querySelectorAll('.nav-item');
+    // ─────────────────── DOM ───────────────────
+    const loader = document.getElementById('loader');
+    const progressBar = document.getElementById('progressBar');
+    const topNav = document.getElementById('topNav');
+    const bottomNav = document.getElementById('bottomNav');
+    const themeToggle = document.getElementById('themeToggle');
+    const typedTextEl = document.getElementById('typedText');
+    const projectsScroll = document.getElementById('projectsScroll');
+    const projectModal = document.getElementById('projectModal');
+    const modalClose = document.getElementById('modalClose');
+    const contactForm = document.getElementById('contactForm');
+    const techScroll = document.getElementById('techScroll');
+    const revealEls = document.querySelectorAll('.reveal');
+    const html = document.documentElement;
 
-            function updateActiveNav() {
-                let current = 'hero';
-                sections.forEach(sec => {
-                    if (window.scrollY >= sec.offsetTop - 120) current = sec.getAttribute('id');
-                });
-                allBottomItems.forEach(item => {
-                    item.classList.toggle('active', item.getAttribute('data-nav') === current);
-                });
+    // ─────────────────── LOADING ───────────────────
+    const finishLoad = () => {
+        loader.classList.add('hidden');
+        observeStats();
+    };
+
+    window.addEventListener('load', () => setTimeout(finishLoad, 600));
+
+    // ─────────────────── SCROLL PROGRESS ───────────────────
+    window.addEventListener('scroll', () => {
+        const st = window.scrollY;
+        const dh = document.documentElement.scrollHeight - window.innerHeight;
+
+        progressBar.style.width =
+            dh > 0 ? Math.min((st / dh) * 100, 100) + '%' : '0%';
+
+        if (st > 40) topNav.classList.add('scrolled');
+        else topNav.classList.remove('scrolled');
+
+        updateActiveNav();
+
+    }, { passive: true });
+
+    // ─────────────────── ACTIVE NAV ───────────────────
+    const sections = document.querySelectorAll('section[id]');
+    const allBottomItems = bottomNav.querySelectorAll('.nav-item');
+
+    function updateActiveNav() {
+        let current = 'hero';
+
+        sections.forEach(sec => {
+            if (window.scrollY >= sec.offsetTop - 120) {
+                current = sec.getAttribute('id');
+            }
+        });
+
+        allBottomItems.forEach(item => {
+            item.classList.toggle(
+                'active',
+                item.getAttribute('data-nav') === current
+            );
+        });
+    }
+
+    // ─────────────────── THEME ───────────────────
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+
+    html.setAttribute('data-theme', savedTheme);
+
+    themeToggle.addEventListener('click', () => {
+        const next =
+            html.getAttribute('data-theme') === 'dark'
+            ? 'light'
+            : 'dark';
+
+        html.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+    });
+
+    // ─────────────────── TYPING ───────────────────
+    const roles = [
+        'Frontend Engineer',
+        'React JS Developer',
+        'Next JS Developer',
+        'Creative Developer',
+        'UI/UX Enthusiast',
+        'Problem Solver'
+    ];
+
+    let ri = 0;
+    let ci = 0;
+    let deleting = false;
+    let speed = 100;
+
+    function type() {
+
+        const cur = roles[ri];
+
+        if (deleting) {
+            typedTextEl.textContent = cur.substring(0, ci - 1);
+            ci--;
+            speed = 35;
+        } else {
+            typedTextEl.textContent = cur.substring(0, ci + 1);
+            ci++;
+            speed = 85;
+        }
+
+        if (!deleting && ci === cur.length) {
+            speed = 1800;
+            deleting = true;
+        } else if (deleting && ci === 0) {
+            deleting = false;
+            ri = (ri + 1) % roles.length;
+            speed = 350;
+        }
+
+        setTimeout(type, speed);
+    }
+
+    type();
+
+    // ─────────────────── REVEAL ───────────────────
+    const revealObs = new IntersectionObserver((entries) => {
+
+        entries.forEach(e => {
+
+            if (e.isIntersecting) {
+                e.target.classList.add('visible');
+                revealObs.unobserve(e.target);
             }
 
-            // ─────────────────── THEME ───────────────────
-            const savedTheme = localStorage.getItem('theme') || 'dark';
-            html.setAttribute('data-theme', savedTheme);
+        });
 
-            themeToggle.addEventListener('click', () => {
-                const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-                html.setAttribute('data-theme', next);
-                localStorage.setItem('theme', next);
-            });
+    }, {
+        threshold: 0.12,
+        rootMargin: '0px 0px -30px 0px'
+    });
 
-            // ─────────────────── TYPING ───────────────────
-            const roles = ['Frontend Engineer', 'Creative Developer', 'UI/UX Enthusiast', 'Problem Solver',
-                'Product Thinker'
-            ];
-            let ri = 0,
-                ci = 0,
-                deleting = false,
-                speed = 100;
+    revealEls.forEach(el => revealObs.observe(el));
 
-            function type() {
-                const cur = roles[ri];
-                if (deleting) { typedTextEl.textContent = cur.substring(0, ci - 1);
-                    ci--;
-                    speed = 35; } else { typedTextEl.textContent = cur.substring(0, ci + 1);
-                    ci++;
-                    speed = 85; }
-                if (!deleting && ci === cur.length) { speed = 1800;
-                    deleting = true; } else if (deleting && ci === 0) { deleting = false;
-                    ri = (ri + 1) % roles.length;
-                    speed = 350; }
-                setTimeout(type, speed);
-            }
-            type();
+    // ─────────────────── STATS ───────────────────
+    function observeStats() {
 
-            // ─────────────────── REVEAL ───────────────────
-            const revealObs = new IntersectionObserver((entries) => {
-                entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible');
-                        revealObs.unobserve(e.target); } });
-            }, { threshold: 0.12, rootMargin: '0px 0px -30px 0px' });
-            revealEls.forEach(el => revealObs.observe(el));
+        document.querySelectorAll('.stat-number[data-count]').forEach(el => {
 
-            // ─────────────────── STATS COUNTER ───────────────────
-            function observeStats() {
-                document.querySelectorAll('.stat-number[data-count]').forEach(el => {
-                    const obs = new IntersectionObserver((entries) => {
-                        entries.forEach(e => {
-                            if (e.isIntersecting) {
-                                animateCount(e.target, parseInt(e.target.getAttribute(
-                                    'data-count')));
-                                obs.unobserve(e.target);
-                            }
-                        });
-                    }, { threshold: 0.6 });
-                    obs.observe(el);
-                });
-            }
+            const obs = new IntersectionObserver((entries) => {
 
-            function animateCount(el, target) {
-                let c = 0;
-                const dur = 1600,
-                    start = performance.now();
+                entries.forEach(e => {
 
-                function upd(now) {
-                    const p = Math.min((now - start) / dur, 1);
-                    const eased = 1 - Math.pow(1 - p, 3);
-                    c = Math.round(eased * target);
-                    el.textContent = c + (target >= 30 ? '+' : '');
-                    if (p < 1) requestAnimationFrame(upd);
-                    else el.textContent = target + (target >= 30 ? '+' : '');
-                }
-                requestAnimationFrame(upd);
-            }
+                    if (e.isIntersecting) {
+                        animateCount(
+                            e.target,
+                            parseInt(e.target.getAttribute('data-count'))
+                        );
 
-            // ─────────────────── PROJECTS ───────────────────
-            const projects = [
-                { id: 1, title: 'Luxe Dashboard', desc: 'Comprehensive analytics dashboard with real-time data visualization, dark mode, and interactive charts — built for SaaS products.',
-                    tags: ['HTML', 'CSS', 'JavaScript', 'Chart.js'], live: '#', github: '#' },
-                { id: 2, title: 'ShopFlow Ecommerce',
-                    desc: 'Mobile-first ecommerce platform with fluid animations, cart management, and a buttery-smooth checkout experience.',
-                    tags: ['HTML', 'CSS', 'JavaScript', 'UI/UX'], live: '#', github: '#' },
-                { id: 3, title: 'Portfolio Pro',
-                    desc: 'Premium personal portfolio template with cinematic animations, glassmorphism, and full responsiveness.',
-                    tags: ['HTML', 'CSS', 'JavaScript'], live: '#', github: '#' },
-                { id: 4, title: 'TaskFlow App',
-                    desc: 'Real-world task management application with drag-and-drop, local storage persistence, and clean minimal UI.',
-                    tags: ['HTML', 'CSS', 'JavaScript', 'LocalStorage'], live: '#', github: '#' },
-                { id: 5, title: 'Weather Vue',
-                    desc: 'Interactive weather app with geolocation, animated weather icons, and a 7-day forecast view.',
-                    tags: ['JavaScript', 'API', 'CSS', 'HTML'], live: '#', github: '#' },
-                { id: 6, title: 'DevConnect',
-                    desc: 'Creative social platform concept for developers — featuring profiles, project sharing, and real-time chat UI.',
-                    tags: ['HTML', 'CSS', 'JavaScript', 'UI Design'], live: '#', github: '#' },
-                { id: 7, title: 'FinTrack Dashboard',
-                    desc: 'Complex financial tracking dashboard with multi-chart layouts, data tables, and export functionality.',
-                    tags: ['JavaScript', 'CSS Grid', 'Chart.js', 'HTML'], live: '#', github: '#' },
-            ];
-
-            function renderProjects() {
-                projectsScroll.innerHTML = projects.map(p => `
-                <div class="project-card" data-id="${p.id}">
-                  <div class="project-img">
-                    <div class="mockup">
-                      <div class="mockup-inner">
-                        <div class="mockup-line"></div>
-                        <div class="mockup-line short"></div>
-                        <div class="mockup-line" style="width:70%;"></div>
-                        <div class="mockup-line short"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="project-info">
-                    <h3>${p.title}</h3>
-                    <p>${p.desc}</p>
-                    <div class="project-tags">${p.tags.map(t => `<span class="project-tag">${t}</span>`).join('')}</div>
-                    <div class="project-links">
-                      <button class="btn btn-primary btn-sm view-proj" data-id="${p.id}">Details</button>
-                    </div>
-                  </div>
-                </div>
-              `).join('');
-
-                projectsScroll.querySelectorAll('.view-proj').forEach(btn => {
-                    btn.addEventListener('click', (e) => {
-                        e.stopPropagation();
-                        openModal(parseInt(btn.getAttribute('data-id')));
-                    });
-                });
-                projectsScroll.querySelectorAll('.project-card').forEach(card => {
-                    card.addEventListener('click', () => openModal(parseInt(card.getAttribute(
-                        'data-id'))));
-                });
-            }
-
-            function openModal(id) {
-                const p = projects.find(x => x.id === id);
-                if (!p) return;
-                document.getElementById('modalTitle').textContent = p.title;
-                document.getElementById('modalDesc').textContent = p.desc;
-                document.getElementById('modalTags').innerHTML = p.tags.map(t =>
-                    `<span class="project-tag">${t}</span>`).join('');
-                document.getElementById('modalLive').href = p.live;
-                document.getElementById('modalGitHub').href = p.github;
-                projectModal.classList.add('active');
-                document.body.style.overflow = 'hidden';
-            }
-
-            function closeModal() {
-                projectModal.classList.remove('active');
-                document.body.style.overflow = '';
-            }
-            modalClose.addEventListener('click', closeModal);
-            projectModal.addEventListener('click', (e) => { if (e.target === projectModal) closeModal(); });
-            document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
-
-            // Swipe down to close on mobile
-            let touchStartY = 0;
-            projectModal.addEventListener('touchstart', (e) => { touchStartY = e.touches[0].clientY; }, { passive: true });
-            projectModal.addEventListener('touchmove', (e) => {
-                const dy = e.touches[0].clientY - touchStartY;
-                if (dy > 80) closeModal();
-            }, { passive: true });
-
-            renderProjects();
-
-            // ─────────────────── TECH STACK ───────────────────
-            const techStack = [
-                { svg: '<svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>',
-                    name: 'HTML5' },
-                { svg: '<svg viewBox="0 0 24 24"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>',
-                    name: 'CSS3' },
-                { svg: '<svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>',
-                    name: 'JavaScript' },
-                { svg: '<svg viewBox="0 0 24 24"><polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"/><line x1="12" y1="22" x2="12" y2="15.5"/><polyline points="22 8.5 12 15.5 2 8.5"/></svg>',
-                    name: 'Python' },
-                { svg: '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="2" x2="12" y2="22"/><path d="M2 12h20"/></svg>',
-                    name: 'GitHub' },
-                { svg: '<svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>',
-                    name: 'UI/UX' },
-                { svg: '<svg viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>',
-                    name: 'Responsive' },
-                { svg: '<svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>',
-                    name: 'Components' },
-            ];
-
-            function renderTech() {
-                techScroll.innerHTML = techStack.map(t => `
-                <div class="tech-chip">
-                  ${t.svg}
-                  <span>${t.name}</span>
-                </div>
-              `).join('');
-            }
-            renderTech();
-
-            // ─────────────────── CONTACT FORM ───────────────────
-            contactForm.addEventListener('submit', (e) => {
-                e.preventDefault();
-                const btn = contactForm.querySelector('button');
-                const orig = btn.innerHTML;
-                btn.innerHTML =
-                    '<svg viewBox="0 0 24 24" style="width:18px;height:18px;"><polyline points="20 6 9 17 4 12"/></svg> Sent!';
-                btn.style.background = '#27ae60';
-                setTimeout(() => { btn.innerHTML = orig;
-                    btn.style.background = '';
-                    contactForm.reset(); }, 2500);
-            });
-
-            // ─────────────────── DOWNLOAD CV ───────────────────
-            downloadCVBtn.addEventListener('click', (e) => {
-                e.preventDefault();
-                const cv = `Agu Collins Chidera — Frontend Engineer\n\nContact: agucollinschidera@email.com\nLocation: Enugu, Nigeria\n\nSummary: Frontend Engineer with 8+ years of coding experience, combining mechanical engineering background with creative software development.\n\nSkills: HTML, CSS, JavaScript, Python, UI/UX Design, Responsive Development, Product Thinking\n\nEducation: Mechanical & Production Engineering — ESUT\n\nExperience: Building digital products since 2016.`;
-                const blob = new Blob([cv], { type: 'text/plain' });
-                const url = URL.createObjectURL(blob);
-                const a = document.createElement('a');
-                a.href = url;
-                a.download = 'Agu_Collins_Chidera_CV.txt';
-                a.click();
-                URL.revokeObjectURL(url);
-                downloadCVBtn.innerHTML =
-                    '<svg viewBox="0 0 24 24" style="width:18px;height:18px;"><polyline points="20 6 9 17 4 12"/></svg> Downloaded!';
-                setTimeout(() => {
-                    downloadCVBtn.innerHTML =
-                        '<svg viewBox="0 0 24 24" style="width:18px;height:18px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg> Download CV';
-                }, 2200);
-            });
-
-            // ─────────────────── SMOOTH SCROLL ───────────────────
-            document.querySelectorAll('a[href^="#"]').forEach(a => {
-                a.addEventListener('click', function(e) {
-                    const href = this.getAttribute('href');
-                    if (href === '#') return;
-                    const target = document.querySelector(href);
-                    if (target) {
-                        e.preventDefault();
-                        window.scrollTo({ top: target.offsetTop - 80, behavior: 'smooth' });
+                        obs.unobserve(e.target);
                     }
+
                 });
+
+            }, { threshold: 0.6 });
+
+            obs.observe(el);
+
+        });
+    }
+
+    function animateCount(el, target) {
+
+        const dur = 1600;
+        const start = performance.now();
+
+        function upd(now) {
+
+            const p = Math.min((now - start) / dur, 1);
+            const eased = 1 - Math.pow(1 - p, 3);
+
+            const c = Math.round(eased * target);
+
+            el.textContent =
+                c + (target >= 30 ? '+' : '');
+
+            if (p < 1) requestAnimationFrame(upd);
+
+        }
+
+        requestAnimationFrame(upd);
+    }
+
+    // ─────────────────── PROJECTS ───────────────────
+    const projects = [
+
+        {
+            id: 1,
+            title: 'Luxe Dashboard',
+            desc: 'Premium SaaS analytics dashboard with charts and real-time metrics.',
+            tags: ['React JS', 'Next JS', 'Bootstrap'],
+            live: 'https://your-live-site.com',
+            github: 'https://github.com/haycee-sama',
+            image: './assets/dashboard.jpg'
+        },
+
+        {
+            id: 2,
+            title: 'Portfolio Pro',
+            desc: 'Modern animated portfolio website with glassmorphism UI.',
+            tags: ['HTML', 'CSS', 'JavaScript'],
+            live: 'https://your-live-site.com',
+            github: 'https://github.com/haycee-sama',
+            image: './assets/portfolio.jpg'
+        },
+
+        {
+            id: 3,
+            title: 'ShopFlow Ecommerce',
+            desc: 'Mobile-first ecommerce platform with smooth UX.',
+            tags: ['React JS', 'Bootstrap', 'Firebase'],
+            live: 'https://your-live-site.com',
+            github: 'https://github.com/haycee-sama',
+            image: './assets/ecommerce.jpg'
+        }
+
+    ];
+
+    function renderProjects() {
+
+        projectsScroll.innerHTML = projects.map(p => `
+
+        <div class="project-card" data-id="${p.id}">
+
+            <div class="project-img">
+                <img
+                    src="${p.image}"
+                    alt="${p.title}"
+                    style="
+                        width:100%;
+                        height:100%;
+                        object-fit:cover;
+                    "
+                >
+            </div>
+
+            <div class="project-info">
+
+                <h3>${p.title}</h3>
+
+                <p>${p.desc}</p>
+
+                <div class="project-tags">
+                    ${p.tags.map(t =>
+                        `<span class="project-tag">${t}</span>`
+                    ).join('')}
+                </div>
+
+                <div class="project-links">
+
+                    <button
+                        class="btn btn-primary btn-sm view-proj"
+                        data-id="${p.id}"
+                    >
+                        Details
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        `).join('');
+
+        projectsScroll.querySelectorAll('.view-proj').forEach(btn => {
+
+            btn.addEventListener('click', (e) => {
+
+                e.stopPropagation();
+
+                openModal(
+                    parseInt(btn.getAttribute('data-id'))
+                );
+
             });
 
-            // ─────────────────── INIT ───────────────────
-            updateActiveNav();
-            console.log('%c Portfolio Ready %c| Agu Collins Chidera %c| Vanilla HTML/CSS/JS',
-                'color:#a29bfe;font-size:1.1em;', 'color:#fff;', 'color:#74b9ff;');
-        })();
-    </script>
+        });
+
+    }
+
+    function openModal(id) {
+
+        const p = projects.find(x => x.id === id);
+
+        if (!p) return;
+
+        document.getElementById('modalTitle').textContent = p.title;
+
+        document.getElementById('modalDesc').textContent = p.desc;
+
+        document.getElementById('modalTags').innerHTML =
+            p.tags.map(t =>
+                `<span class="project-tag">${t}</span>`
+            ).join('');
+
+        document.getElementById('modalLive').href = p.live;
+
+        document.getElementById('modalGitHub').href = p.github;
+
+        document.querySelector('.modal-img').innerHTML = `
+            <img
+                src="${p.image}"
+                alt="${p.title}"
+                style="
+                    width:100%;
+                    height:100%;
+                    object-fit:cover;
+                    border-radius:20px;
+                "
+            >
+        `;
+
+        projectModal.classList.add('active');
+
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+        projectModal.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    modalClose.addEventListener('click', closeModal);
+
+    projectModal.addEventListener('click', (e) => {
+        if (e.target === projectModal) closeModal();
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeModal();
+    });
+
+    renderProjects();
+
+    // ─────────────────── TECH STACK ───────────────────
+    const techStack = [
+        'HTML5',
+        'CSS3',
+        'JavaScript',
+        'React JS',
+        'Next JS',
+        'Bootstrap',
+        'Tailwind CSS',
+        'TypeScript',
+        'Git',
+        'GitHub',
+        'Firebase',
+        'REST APIs',
+        'Responsive Design',
+        'Vercel',
+        'Figma'
+    ];
+
+    function renderTech() {
+
+        techScroll.innerHTML = techStack.map(t => `
+
+            <div class="tech-chip">
+                <span>${t}</span>
+            </div>
+
+        `).join('');
+    }
+
+    renderTech();
+
+    // ─────────────────── CONTACT FORM ───────────────────
+    contactForm.addEventListener('submit', async (e) => {
+
+        e.preventDefault();
+
+        const btn = contactForm.querySelector('button');
+
+        const original = btn.innerHTML;
+
+        btn.innerHTML = 'Sending...';
+
+        const params = {
+            from_name: document.getElementById('name').value,
+            from_email: document.getElementById('email').value,
+            message: document.getElementById('message').value
+        };
+
+        try {
+
+            await emailjs.send(
+                'YOUR_SERVICE_ID',
+                'YOUR_TEMPLATE_ID',
+                params
+            );
+
+            btn.innerHTML = 'Message Sent!';
+            btn.style.background = '#27ae60';
+
+            contactForm.reset();
+
+        } catch (error) {
+
+            console.error(error);
+
+            btn.innerHTML = 'Failed!';
+            btn.style.background = '#e74c3c';
+
+        }
+
+        setTimeout(() => {
+            btn.innerHTML = original;
+            btn.style.background = '';
+        }, 3000);
+
+    });
+
+    // ─────────────────── SMOOTH SCROLL ───────────────────
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+
+        a.addEventListener('click', function(e) {
+
+            const href = this.getAttribute('href');
+
+            if (href === '#') return;
+
+            const target = document.querySelector(href);
+
+            if (target) {
+
+                e.preventDefault();
+
+                window.scrollTo({
+                    top: target.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+
+            }
+
+        });
+
+    });
+
+    // ─────────────────── INIT ───────────────────
+    updateActiveNav();
+
+})();
+</script>
 </body>
 </html>
